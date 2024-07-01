@@ -1,0 +1,74 @@
+/* Ini CSS */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+
+nav>a {
+    margin: 3px ;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 60px;
+    width: 60px;
+    border: 1px solid;
+    
+
+}
+
+.logo-icon {
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 50%;
+
+    /* Logo icon */
+    background-image: url(https://cdn.medcom.id/dynamic/content/2021/02/10/1241449/Djg7zh9fbB.jpg?w=700);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.banner-container {
+    height: 700px;
+    width: 100%;
+    border: 1px solid;
+    
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-item {
+   text-align: -webkit-center;
+}
+
+
+
+.profile-icon {
+    height: 90px;
+    width: 90px;
+    border: 1px solid;
+    border-radius: 50%;
+
+    /*logo profile */
+    background-image: url(../assets/lo1.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.profile-1 {
+    background-image: url(../assets/lo1.jpeg);
+}
+
+.profile-2 {
+    background-image: url(../assets/lo2.jpeg);
+}
+
+.profile-3 {
+    background-image: url(../assets/lo3.webp);
+}

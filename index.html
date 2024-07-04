@@ -1,78 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
-    <!-- Ini Header Nav -->
+    <!--Menghubungkan file html dengan css dan javascript secara eksternal  -->
+    <link rel="stylesheet" href="css/style.css"> 
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Header Nav -->
     <header class="nav-container">
         <div class="logo-icon"></div>
         <nav>
-            <a>Home</a>
-            <a>Our Profile</a>
-            <a>Portofolio</a>
-            <a>Message Us</a>
+            <a href="#home">Home</a>
+            <a href="#profile">Media Sosial</a>
+            <a href="#portfolio">Portofolio</a>
+            <a href="#massa">Message Us</a>
         </nav>
     </header>
-    
-      <hr>
-
+    <hr>
+    <!--Main-->
     <main>
-        <!-- Ini Home Content -->
-         <section>
-              <header class="banner-container">
-                <h1>Hi User! Welcome to Website</h1>
-                <p>Ini adalah Website portofolio saya</p>
-              </header>
-         </section>
-         <hr>
-
-         <!--ini our profile content-->
-         <section id="our-profile">
+        <!-- Home Content -->
+        <section class="home-content" id="home">
             <header>
-                <h1>Our Profile</h1>
+                <h1 id="welcomeMessage">Halo user, Welcome to Hanifah Website!</h1>
             </header>
-            <article class="profile-content">
-                <div class="profile-item">
-                    <div class="profile-icon profile-1">
-                        <p>Profile 1</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="profile-icon profile-2">
-                        <p>Profile 1</p>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="profile-icon profile-3">
-                        <p>Profile 1</p>
-                    </div>
-                </div>
-
-
-               
+            <article>
+                <p>Ini adalah Website portofolio saya</p>
             </article>
-         </section>
+            <div class="banner-container">
+                <div class="banner-item active" style="background-image: url('assets/lo1.jpeg')"></div>
+                <div class="banner-item" style="background-image: url('assets/g1.jpg')"></div>
+                <div class="banner-item" style="background-image: url('assets/g2.jpg')"></div>
+                <div class="banner-item" style="background-image: url('assets/p.jpg')"></div>
 
-         <!--Ini Portofolio Content -->
-         <section>
+                <button class="prev" onclick="prevSlide()">Prev</button> <!--Untuk Slide-->
+                <button class="next" onclick="nextSlide()">Next</button>
+            </div>
+        </section>
+        <hr>
+        <!-- Our Profile Content -->
+        <section id="profile">
+            <header>
+                <h1>Media sosial</h1>
+            </header>
+            <article>
+                <div class="profile-content">
+                    <div class="profile-item">
+                        <div class="profile-icon profile-1" style="background-image:url(assets/github.jpg) ;"> <!--Menambahkan Gambar pada Profile Content-->
+                            <a href="https://github.com/hnif4">github</a>
+
+                        </div>
+                    </div>
+                    <div class="profile-item">
+                        <div class="profile-icon profile-1" style="background-image:url(assets/instagram.png) ;">
+                            <a href="https://instagram.com/stnhaniiifh">instagram</a>
+                        </div>
+                    </div>
+                    <div class="profile-item">
+                        <div class="profile-icon profile-1" style="background-image:url(assets/linkedin.png) ;">
+                            <a href=https://www.linkedin.com/in/siti-nur-hanifah-405a8a292>Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <!-- Portfolio Content -->
+        <section id="portfolio">
+            <header>
+                <h1>Portofolio</h1>
+            </header>
+            <div class="portfolio-content">
+                <nav>
+                    <p>
+                    <h3>Siti Nur Hanifah</h3>
+                    </p>
+                    <p>
+                        Saya merupakan Siswa jurusan Pengembangan Perangkat Lunak dan Gim Di SMKN 4 Kota Bogor.
+                        Saya memiliki minat besar dalam menulis dan sedang belajar
+                        berbagai bahasa pemrograman seperti HTML, CSS, PHP, dan JavaScript serta framework Laravel di
+                        sekolah.
+                        Saya berpengalaman menyelesaikan berbagai project selama bersekolah dengan bantuan para guru.
+                        Proyek ini menggunakan HTML, CSS, PHP, dan JavaScript, serta diintegrasikan dengan framework
+                        Laravel yang mana membuat saya tertarik dalam bidang IT.
+
+                        <br>
+                    <p>Sejak Di Sekolah Dasar saya senang mengikuti organisasi mulai dari Bela diri sampai Organisasi
+                        Relawan <br>
+                        Saat ini saya aktif di organisasi Palang Merah Remaja. Saya sering mengikuti perlombaan PMR
+                        tingkat wira yang diadakan di sekolah lain. <br>
+                        Bergabung dalam sebuah organisasi membuat pengalaman saya lebih banyak,dan pengetahuanpun
+                        bertambah, melatih jiwa kepemimpinan, <br>
+                        kerjasama tim, meningkatkan kemampuan berkomunikasi dan menjadi kuat dalam menghadapi tekanan.
+                    </p>
+                    <p>Saya mulai belajar bahasa pemrograman di tahun 2022. Dan 
+                        Website ini merupakan website portofolio kedua saya! <br>
+                        <a href="https://hnif4.github.io/portofoliio/">Web Portofolio saya yang pertama</a> dibuat mengikuti tutorial 
+                        YouTube<br>
+                        Website sederhana ini saya buat sebagai bahan ajar 
+                        agar saya bisa bertahan di jurusan pengembangan perangkat lunak dan Gim!
+                    </p>
+                </nav>
+            </div>
+        </section>
+        <hr>
+        <!-- Message Us Content -->
+        <section id="massa">
             <header>
                 <h1>Message Us</h1>
             </header>
-            
-         </section>
+            <div class="container1">
+                <div class="form-container">
+                    <h2>Input Form</h2>
+                        <form id="myForm" onsubmit="return validateForm();">
+                            <label for="name"><strong>Nama :</strong></label>
+                            <input type="text" id="name" name="name"><br><br>
+                            <label for="birthdate"><strong>Tanggal Lahir :</strong></label>
+                            <input type="date" id="birthdate" name="birthdate"><br><br>
+                            <label for="gender"><strong>Jenis Kelamin :</strong></label>
+                            <input type="radio" id="male" name="gender" value="Laki-laki"> Laki-laki
+                            <input type="radio" id="female" name="gender" value="Perempuan">Perempuan<br><br>
+                            <label for="message"><strong>Pesan :</strong></label>
+                            <textarea id="message" name="message"></textarea><br><br>
+                            <input type="submit" value="Submit">
+                            <p id="error-message" class="error"></p>
+                        </form>
+                    
+                </div>
 
-         <!-- Ini Message Us -->
-
+                <div id="result-container">
+                    <h2>Form Data</h2>
+                    <p><strong>Nama:</strong> <span id="resultName"></span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="resultBirthdate"></span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="resultGender"></span></p>
+                    <p><strong>Pesan:</strong> <span id="resultMessage"></span></p>
+                </div>
+        </section>
     </main>
-
+    <!--Footer-->
     <footer>
-
+        <!--isi footer-->
+        <h4>website ini masih dalam pengembangan dan masih banyak kekurangan,mohon kritik dan saran untuk program yang lebih baik!</h4>
     </footer>
 </body>
+
 </html>
